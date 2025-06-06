@@ -100,5 +100,16 @@ console.log("Lista com o item removido:", inventarioAlpha); // Nova lista com it
 
 // 8.O primeiro item da Beta pertence a um museu e deve ser removido.
 let itemRemovido1 = inventarioBeta.shift(); // Removendo item incorreto com shift
-console.log(`Item removido: ${itemRemovido2}`); // Enviando item removido com console.log
+console.log(`Item removido: ${itemRemovido1}`); // Enviando item removido com console.log
 console.log("Lista com o item removido:", inventarioBeta); // Nova lista com item removido
+
+// 9.Verifique se a “Relíquia de Zordon” está presente no inventário Beta.
+
+// 10.Verifique se o item “Nanofibra Luminosa” ainda está disponível na Alpha.
+
+// 12.Crie um texto com os nomes dos 10 primeiros itens da Beta, separados por vírgulas.
+
+// 13.Gere uma nova lista com os 5 primeiros itens da nave Beta para inspeção.
+let novaListaBeta = []
+novaListaBeta = inventarioBeta.slice(0, 5)
+console.log(novaListaBeta)
