@@ -66,10 +66,17 @@ console.log("Iventário com o item removido:", inventarioBeta); // // Enviando c
 console.log("Item removido:", inventarioBetaRemovido); // Outro console.log para mostrar o item obsoleto removido
 
 // 3.Três novos artefatos da Terra foram entregues à nave Alpha. Adicione-os ao final.
-let novoItem01 = ["Computador Gamer", "Terra", 7043]
-let novoItem02 = ["Playstation 2","Terra", 2562]
-let novoItem03 = ["Celular Motorola", "Terra", 6542]
-inventarioAlpha.push(novoItem01)
-inventarioAlpha.push(novoItem02)
-inventarioAlpha.push(novoItem03)
-console.table(inventarioAlpha)
+let novoItem01 = ["Computador Gamer", "Terra", 7043];
+let novoItem02 = ["Playstation 2","Terra", 2562];
+let novoItem03 = ["Celular Motorola", "Terra", 6542];
+inventarioAlpha.push(novoItem01);
+inventarioAlpha.push(novoItem02);
+inventarioAlpha.push(novoItem03);
+console.table(inventarioAlpha);
+
+// 4.Dois artefatos especiais de Kepler foram coletados e adicionados à nave Beta.
+let novoItem001 = ["Notebook Asus", "Terra", 4678];
+let novoItem002 = ["Xbox 360", "Terra", 9864];
+inventarioBeta.push(novoItem001);
+inventarioBeta.push(novoItem002);
+console.table(inventarioBeta);
