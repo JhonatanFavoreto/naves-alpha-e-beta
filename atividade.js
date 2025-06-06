@@ -108,8 +108,17 @@ console.log("Lista com o item removido:", inventarioBeta); // Nova lista com ite
 // 10.Verifique se o item “Nanofibra Luminosa” ainda está disponível na Alpha.
 
 // 12.Crie um texto com os nomes dos 10 primeiros itens da Beta, separados por vírgulas.
+let novaLista = []; // Criando let para a nova lista
+novaLista = inventarioBeta.slice(0,10); // Encontrando os nomes dos 10 primeiros itens
+console.log(`Lista com os nomes dos 10 primeiros: ${novaLista.join(';  ')}`); // Enviando o console.log com a nova lista
 
 // 13.Gere uma nova lista com os 5 primeiros itens da nave Beta para inspeção.
-let novaListaBeta = []
-novaListaBeta = inventarioBeta.slice(0, 5)
-console.log(novaListaBeta)
+let novaListaBeta = [] // Criando let para a nova lista Beta
+novaListaBeta = inventarioBeta.slice(0, 5) // Encontrando os nomes dos 5 primeiros itens
+console.log(`Lista com os 5 primeiros itens da nave Beta${novaListaBeta}`) // Enviando o console.log com a nova lista
+
+// 14.Separe os 10 últimos itens do inventário Alpha para estudo temporal.
+inventarioAlpha.reverse() // Fazendo a separação dos itens com reverse
+console.log(`Novo inventário separado: ${inventarioAlpha.slice(0, 10)}`) // Enviando a separação com console.log dos últimos 10 itens
+
+// 15.O quinto item da Alpha foi substituído por uma versão mais moderna. Atualize.
