@@ -82,7 +82,13 @@ inventarioBeta.push(novoItem002); // Adicionando o item 002 com push ao iventari
 console.table(inventarioBeta); // Enviando a mensagem com console.log do novo iventário
 
 // 5.Um item da Alpha precisa aparecer no topo da lista para ser destacado na vitrine.
-let itemTopo = inventarioAlpha[7] // Criando a let para o item TOP da índice 7
-inventarioAlpha.unshift(itemTopo) // Adicionando uma novo item no início do Iventário
-inventarioAlpha.splice(8, 1) // Removendo oitavo elemento
-console.log(inventarioAlpha) // Enviando console.log do novo iventarioAlpha
+let itemTopo = inventarioAlpha[7]; // Criando a let para o item TOP da índice 7
+inventarioAlpha.unshift(itemTopo); // Adicionando uma novo item no início do Iventário
+inventarioAlpha.splice(8, 1); // Removendo oitavo elemento
+console.log("Lista com o novo item no Topo:", inventarioAlpha); // Enviando console.log do novo iventarioAlpha
+
+// 6.Um item da Beta deve ser promovido para o início da lista para estudo prioritário.
+let itemPromovido = inventarioBeta.splice(17,1);
+console.log(`Item de estudo promovido: ${itemPromovido}`);
+inventarioBeta.unshift(itemPromovido);
+console.log("Lista com o item promovido:", inventarioBeta);
