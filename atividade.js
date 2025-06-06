@@ -136,3 +136,9 @@ console.log(`Itens que foram removidos: ${itensRemovidos}`);
 // 17.Unifique os inventários Alpha e Beta em uma única estrutura.
 let listaUnificada = inventarioAlpha.concat(inventarioBeta) // Unificando os iventários alpha e beta com concat
 console.log(listaUnificada) // Enviando o console.log
+
+// 18. Junte os cinco primeiros itens de cada nave em uma nova vitrine de destaques.
+let cincoItensAlpha = inventarioAlpha.slice(0, 5) // Encontrando os primeiros cinco itens da nave Alpha
+let cincoItensBeta = inventarioBeta.slice(0, 5) // Encontrando os primeiros cinco itens da nave Beta
+let vitrineDestaque = cincoItensAlpha.concat(cincoItensBeta) // Unindo os primeiros 5 itens de cada inventário
+console.log(vitrineDestaque) // Enviando o console.log da vitrine
