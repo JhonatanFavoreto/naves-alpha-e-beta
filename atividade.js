@@ -88,7 +88,12 @@ inventarioAlpha.splice(8, 1); // Removendo oitavo elemento
 console.log("Lista com o novo item no Topo:", inventarioAlpha); // Enviando console.log do novo iventarioAlpha
 
 // 6.Um item da Beta deve ser promovido para o início da lista para estudo prioritário.
-let itemPromovido = inventarioBeta.splice(17,1);
-console.log(`Item de estudo promovido: ${itemPromovido}`);
-inventarioBeta.unshift(itemPromovido);
-console.log("Lista com o item promovido:", inventarioBeta);
+let itemPromovido = inventarioBeta.splice(17,1); // Criando a let para o item promovido da índice 17
+console.log(`Item de estudo promovido: ${itemPromovido}`); // Enviando o console.log para o item que foi promovido
+inventarioBeta.unshift(itemPromovido); // Adicionando item com unshift
+console.log("Lista com o item promovido:", inventarioBeta); // Enviando console.log com a lista do item promovido
+
+// 7.Um artefato incorreto foi inserido no topo da Alpha por engano. Ele deve ser excluído.
+let itemRemovido = inventarioAlpha.shift(); // Removendo item incorreto com shift
+console.log(`Item removido: ${itemRemovido}`); // Enviando item removido com console.log
+console.log("Lista com o item removido:", inventarioAlpha); // Nova lista com item removido
