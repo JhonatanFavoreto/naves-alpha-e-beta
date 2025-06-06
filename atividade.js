@@ -128,3 +128,11 @@ console.log(`Item na versão moderna: ${inventarioAlpha[4]}`); // Enviando o ite
 console.log("Lista com o item moderno:", inventarioAlpha); // Enviando o console.log com item atualizado
 
 // 16.Dois itens no meio do inventário Beta foram contaminados e precisam ser removidos.
+let Removidos = inventarioBeta.length / 2; // Removendo dois itens no meio da Array
+console.log(Removidos);
+let itensRemovidos = inventarioBeta.splice(11, 2);
+console.log(`Itens que foram removidos: ${itensRemovidos}`);
+
+// 17.Unifique os inventários Alpha e Beta em uma única estrutura.
+let listaUnificada = inventarioAlpha.concat(inventarioBeta) // Unificando os iventários alpha e beta com concat
+console.log(listaUnificada) // Enviando o console.log
