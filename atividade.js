@@ -122,7 +122,9 @@ inventarioAlpha.reverse() // Fazendo a separação dos itens com reverse
 console.log(`Novo inventário separado: ${inventarioAlpha.slice(0, 10)}`) // Enviando a separação com console.log dos últimos 10 itens
 
 // 15.O quinto item da Alpha foi substituído por uma versão mais moderna. Atualize.
-console.log(`Item substituido:${inventarioAlpha[4]}`);
-inventarioAlpha[4] = ["Flor de Andrômeda Moderna", "AndrômedaM", 16392]
-console.log(`Item na versão moderna: ${inventarioAlpha[4]}`);
-console.log("Lista com o item moderno:", inventarioAlpha);
+console.log(`Item substituido:${inventarioAlpha[4]}`); // Fazendo o console.log com a substituição do item na quinta posição
+inventarioAlpha[4] = ["Flor de Andrômeda Moderna", "AndrômedaM", 16392] // Atualizando o item de indice 4
+console.log(`Item na versão moderna: ${inventarioAlpha[4]}`); // Enviando o item na versão moderna
+console.log("Lista com o item moderno:", inventarioAlpha); // Enviando o console.log com item atualizado
+
+// 16.Dois itens no meio do inventário Beta foram contaminados e precisam ser removidos.
