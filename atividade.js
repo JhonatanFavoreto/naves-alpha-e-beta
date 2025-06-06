@@ -58,9 +58,18 @@ let inventarioBeta = [
 // 1.Um item duplicado foi detectado no final do inventário Alpha. Remova a cópia.
 let inventarioAlphaRemovido = inventarioAlpha.pop(); // Criando a let: iventarioAlphaRemovido com .pop para remover o último item da lista (duplicado)
 console.log("Iventário com o item removido:", inventarioAlpha); // // Enviando console.log para mostrar o novo InventarioAlpha
-console.log("Música removida:", inventarioAlphaRemovido); // Outro console.log para mostrar o item removido
+console.log("Item removido:", inventarioAlphaRemovido); // Outro console.log para mostrar o item removido
 
 // 2.Um artefato obsoleto foi removido do final da lista Beta após avaliação técnica.
 let inventarioBetaRemovido = inventarioBeta.pop(); // Criando a let: iventarioBetaRemovido com .pop para remover o último item da lista (obsoleto)
 console.log("Iventário com o item removido:", inventarioBeta); // // Enviando console.log para mostrar o novo InventarioBeta
-console.log("Música removida:", inventarioBetaRemovido); // Outro console.log para mostrar o item obsoleto removido
+console.log("Item removido:", inventarioBetaRemovido); // Outro console.log para mostrar o item obsoleto removido
+
+// 3.Três novos artefatos da Terra foram entregues à nave Alpha. Adicione-os ao final.
+let novoItem01 = ["Computador Gamer", "Terra", 7043]
+let novoItem02 = ["Playstation 2","Terra", 2562]
+let novoItem03 = ["Celular Motorola", "Terra", 6542]
+inventarioAlpha.push(novoItem01)
+inventarioAlpha.push(novoItem02)
+inventarioAlpha.push(novoItem03)
+console.table(inventarioAlpha)
