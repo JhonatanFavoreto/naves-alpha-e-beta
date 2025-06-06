@@ -122,3 +122,7 @@ inventarioAlpha.reverse() // Fazendo a separação dos itens com reverse
 console.log(`Novo inventário separado: ${inventarioAlpha.slice(0, 10)}`) // Enviando a separação com console.log dos últimos 10 itens
 
 // 15.O quinto item da Alpha foi substituído por uma versão mais moderna. Atualize.
+console.log(`Item substituido:${inventarioAlpha[4]}`);
+inventarioAlpha[4] = ["Flor de Andrômeda Moderna", "AndrômedaM", 16392]
+console.log(`Item na versão moderna: ${inventarioAlpha[4]}`);
+console.log("Lista com o item moderno:", inventarioAlpha);
