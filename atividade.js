@@ -97,3 +97,8 @@ console.log("Lista com o item promovido:", inventarioBeta); // Enviando console.
 let itemRemovido = inventarioAlpha.shift(); // Removendo item incorreto com shift
 console.log(`Item removido: ${itemRemovido}`); // Enviando item removido com console.log
 console.log("Lista com o item removido:", inventarioAlpha); // Nova lista com item removido
+
+// 8.O primeiro item da Beta pertence a um museu e deve ser removido.
+let itemRemovido1 = inventarioBeta.shift(); // Removendo item incorreto com shift
+console.log(`Item removido: ${itemRemovido2}`); // Enviando item removido com console.log
+console.log("Lista com o item removido:", inventarioBeta); // Nova lista com item removido
