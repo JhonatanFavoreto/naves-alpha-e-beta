@@ -66,17 +66,23 @@ console.log("Iventário com o item removido:", inventarioBeta); // // Enviando c
 console.log("Item removido:", inventarioBetaRemovido); // Outro console.log para mostrar o item obsoleto removido
 
 // 3.Três novos artefatos da Terra foram entregues à nave Alpha. Adicione-os ao final.
-let novoItem01 = ["Computador Gamer", "Terra", 7043];
-let novoItem02 = ["Playstation 2","Terra", 2562];
-let novoItem03 = ["Celular Motorola", "Terra", 6542];
-inventarioAlpha.push(novoItem01);
-inventarioAlpha.push(novoItem02);
-inventarioAlpha.push(novoItem03);
-console.table(inventarioAlpha);
+let novoItem01 = ["Computador Gamer", "Terra", 7043]; // Criando a let do novo item 01
+let novoItem02 = ["Playstation 2","Terra", 2562]; // Criando a let do novo item 02
+let novoItem03 = ["Celular Motorola", "Terra", 6542]; // Criando a let do novo item 03
+inventarioAlpha.push(novoItem01); // Adicionando o item 01 com push ao iventarioAlpha
+inventarioAlpha.push(novoItem02); // Adicionando o item 02 com push ao iventarioAlpha
+inventarioAlpha.push(novoItem03); // Adicionando o item 03 com push ao iventarioAlpha
+console.table(inventarioAlpha); // Enviando a mensagem com console.log do novo iventário
 
 // 4.Dois artefatos especiais de Kepler foram coletados e adicionados à nave Beta.
-let novoItem001 = ["Notebook Asus", "Terra", 4678];
-let novoItem002 = ["Xbox 360", "Terra", 9864];
-inventarioBeta.push(novoItem001);
-inventarioBeta.push(novoItem002);
-console.table(inventarioBeta);
+let novoItem001 = ["Notebook Asus", "Terra", 4678]; // Criando a let do novo item 001
+let novoItem002 = ["Xbox 360", "Terra", 9864]; // Criando a let do novo item 002
+inventarioBeta.push(novoItem001); // Adicionando o item 001 com push ao iventarioBeta
+inventarioBeta.push(novoItem002); // Adicionando o item 002 com push ao iventarioBeta
+console.table(inventarioBeta); // Enviando a mensagem com console.log do novo iventário
+
+// 5.Um item da Alpha precisa aparecer no topo da lista para ser destacado na vitrine.
+let itemTopo = inventarioAlpha[7] // Criando a let para o item TOP da índice 7
+inventarioAlpha.unshift(itemTopo) // Adicionando uma novo item no início do Iventário
+inventarioAlpha.splice(8, 1) // Removendo oitavo elemento
+console.log(inventarioAlpha) // Enviando console.log do novo iventarioAlpha
