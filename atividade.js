@@ -137,8 +137,37 @@ console.log(`Itens que foram removidos: ${itensRemovidos}`);
 let listaUnificada = inventarioAlpha.concat(inventarioBeta) // Unificando os iventários alpha e beta com concat
 console.log(listaUnificada) // Enviando o console.log
 
-// 18. Junte os cinco primeiros itens de cada nave em uma nova vitrine de destaques.
+// 18.Junte os cinco primeiros itens de cada nave em uma nova vitrine de destaques.
 let cincoItensAlpha = inventarioAlpha.slice(0, 5) // Encontrando os primeiros cinco itens da nave Alpha
 let cincoItensBeta = inventarioBeta.slice(0, 5) // Encontrando os primeiros cinco itens da nave Beta
 let vitrineDestaque = cincoItensAlpha.concat(cincoItensBeta) // Unindo os primeiros 5 itens de cada inventário
 console.log(vitrineDestaque) // Enviando o console.log da vitrine
+
+// 19.Crie uma versão com os nomes de todos os itens da Beta em letras maiúsculas.
+
+// 20.Converta os valores de todos os itens da Alpha para uma moeda interestelar (multiplicação).
+
+// 21.Filtre da Beta apenas os itens que custam mais de 7000 créditos.
+
+// 22.Filtre da Alpha todos os itens originários da Terra para despacho diplomático.
+
+// 23.Reorganize os itens da Beta do menor para o maior valor.
+
+// 24.Reorganize a lista da Alpha em ordem alfabética dos nomes dos artefatos.
+
+// 25.Inverta a ordem de todos os itens da Beta para visualização reversa.
+
+// 26.Inverta a ordem dos 15 primeiros itens da Alpha como simulação de viagem no tempo.
+let quinzePrimeiros = inventarioAlpha.slice(0,15);
+let viagemTemporal = quinzePrimeiros.reverse();
+let temporalViagem = inventarioAlpha.splice(16, inventarioAlpha.length);
+let viagemTemporalVerdadeira = quinzePrimeiros.concat(temporalViagem)
+console.log(viagemTemporalVerdadeira);
+
+// 27.Crie uma prévia com os nomes e planetas dos 10 itens mais valiosos da Alpha.
+
+// 28.Extraia os itens da Beta que foram coletados em luas (ex: Lua, Europa, Titã…).
+
+// 29.Identifique e mova para o final da Alpha todos os itens com valor abaixo de 4000.
+
+// 30.Conte quantos itens do inventário Beta vieram de planetas do sistema solar interno.
